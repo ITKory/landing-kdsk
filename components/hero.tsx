@@ -1,7 +1,11 @@
+'use client'
+import {  useRef   } from 'react'
+
 import VideoThumb from '@/public/images/hero-image-01.jpg'
 import ModalVideo from '@/components/modal-video'
 
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null)
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
@@ -20,23 +24,21 @@ export default function Hero() {
         </div>
 
         {/* Hero content */}
-        <div className="relative pt-52 pb-10 md:pt-40 md:pb-16">
+        <div className="relative pt-52 pb-10 md:pt-40 md:pb-16 ">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16"   >
             <h2 className="h2 mb-4" data-aos="fade-up">Сметная документация для строительных работ</h2>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200"> Успешно проходим экспертизу сметной документации в установленный срок </p>
       
           </div>
-
-          <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1024}
-            thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="/videos/video.mp4"
-            videoWidth={1920}
-            videoHeight={1080} />
+               <div className="flex-1 flex   justify-center items-center md:my-0 my-10 relative"  >
+               <video className='rounded shadow-lg shadow-indigo-500 md:shadow-xl md:shadow-indigo-500' autoPlay muted  ref={videoRef} width={424} height={576} loop controls>
+                  <source src="/videos/video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video> 
+              </div>
+            
 
         </div>
 

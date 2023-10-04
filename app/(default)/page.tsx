@@ -9,6 +9,7 @@ import Newsletter from '@/components/newsletter'
 import Zigzag from '@/components/zigzag'
 import Testimonials from '@/components/testimonials'
 import { Toaster } from 'react-hot-toast'
+import '../css/style.css'
 
 export default function Home() {
   return (

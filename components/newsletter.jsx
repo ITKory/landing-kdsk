@@ -112,9 +112,6 @@ export default function Newsletter() {
              </div>
               }
       </div>
- 
-
- 
 
         </div>
 
