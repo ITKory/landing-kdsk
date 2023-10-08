@@ -45,7 +45,7 @@
     "react-hook-form": "^7.47.0",
     "react-hot-toast": "^2.4.1",
     "react-query": "^3.39.3",
-    "react-router-dom": "^6.16.0",
+    "react-router-dom": "^6.0.1",
     "scroll-carousel": "^1.2.7",
     "scroll-carousel-react": "^1.0.0",
     "sort-by": "^1.2.0"

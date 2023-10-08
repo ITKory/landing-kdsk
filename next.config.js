@@ -1,8 +1,8 @@
-/** @type {import('next').NextConfig} */
+/**
+ * @type {import('next').NextConfig}
+ */
+const nextConfig = {
+  /* config options here */
+}
  
-module.exports = {
-    
-    experimental: {
-      newNextLinkBehavior: true,
-    },
-  };
+module.exports = nextConfig

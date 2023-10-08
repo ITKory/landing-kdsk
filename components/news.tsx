@@ -1,6 +1,6 @@
 'use client';
  
-import ModalVideo from './modal-video';
+ 
  
 import { useEffect , useRef,useState} from 'react';
 import axios from 'axios';
