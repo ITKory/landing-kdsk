@@ -1,4 +1,5 @@
 'use client'
+
   import Hero from '@/components/hero'
   import Features from '@/components/features'
   import Newsletter from '@/components/newsletter'
@@ -40,6 +41,8 @@ import PageIllustration from '@/components/page-illustration'
   ]);
   export default function Home() {
     return (
+        <>
         <RouterProvider router={router} />
+        </>
     )
   }
