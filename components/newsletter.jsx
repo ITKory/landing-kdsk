@@ -16,7 +16,7 @@ export default function Newsletter() {
   const sendEmail = (e) => {
     e.preventDefault();
     setShowForm(false);
-    emailjs.sendForm('service_jmybiru', 'template_ji4csut', form.current, 'bXYnzDDeZPs_YVXPW')
+    emailjs.sendForm('service_ybynq75', 'template_or1y2pr', form.current, 'zHd0zM7ZzmtGQQff_')
       .then((result) => {
         toast.success('Ваша заявка отправлена на рассмотрение !')
         setShowForm(false);
@@ -63,31 +63,31 @@ export default function Newsletter() {
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full ">
                   <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="full-name">ФИО <span className="text-red-600">*</span></label>
-                  <input id="full-name" type="text" name='user_name' className="form-input w-full text-gray-300" placeholder="Ваше полное имя" required />
+                  <input id="full-name" type="text" name='user_name' className="form-input w-full text-gray-700 " placeholder="Ваше полное имя" required />
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full ">
                   <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="company-name">Организация, должность<span className="text-red-600">*</span></label>
-                  <input id="company-name" type="text" name="user_job" className="form-input w-full text-gray-300" placeholder="Организация которую вы представляете " required />
+                  <input id="company-name" type="text" name="user_job" className="form-input w-full text-gray-700 " placeholder="Организация которую вы представляете " required />
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full ">
                   <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="email"> Email <span className="text-red-600">*</span></label>
-                  <input id="email" type="email" name="user_email" className="form-input w-full text-gray-300" placeholder="you@yourcompany.com" required />
+                  <input id="email" type="email" name="user_email" className="form-input w-full text-gray-700 " placeholder="you@yourcompany.com" required />
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full ">
                   <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="email"> Ваш номер телефона <span className="text-red-600">*</span></label>
-                  <input id="phone" type="phone" name="user_phone" className="form-input w-full text-gray-300" placeholder="+7 (999) 999-999" required />
+                  <input id="phone" type="phone" name="user_phone" className="form-input w-full  text-gray-700 " placeholder="+7 (999) 999-999" required />
                 </div>
               </div>
               <div className="flex flex-wrap -mx-3 mb-4">
                 <div className="w-full ">
                   <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="password">Комментарии </label>
-                  <textarea  name="message"  className="form-input w-full text-gray-300"      />
+                  <textarea  name="message"  className="form-input w-full text-gray-700"      />
                 </div>
               </div>
           

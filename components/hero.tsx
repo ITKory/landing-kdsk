@@ -1,8 +1,7 @@
 'use client'
 import {  useRef   } from 'react'
 
-import VideoThumb from '@/public/images/hero-image-01.jpg'
-import ModalVideo from '@/components/modal-video'
+ 
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -33,7 +32,7 @@ export default function Hero() {
       
           </div>
                <div className="flex-1 flex   justify-center items-center md:my-0 my-10 relative"  >
-               <video className='rounded shadow-lg shadow-indigo-500 md:shadow-xl md:shadow-indigo-500' autoPlay muted  ref={videoRef} width={424} height={576} loop controls>
+               <video className='rounded shadow-lg shadow-gray-800 md:shadow-xl md:shadow-gray-800' autoPlay muted  ref={videoRef} width={424} height={576} loop controls>
                   <source src="/videos/video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video> 

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import MobileMenu from './mobile-menu'
+ 
 
 export default function Header() {
   return (
@@ -118,28 +118,7 @@ m108 -348 c0 -241 -2 -279 -15 -279 -13 0 -15 38 -15 278 0 153 3 282 6 285
             </Link>
           </div>
  
-          {/* Desktop navigation 
-          <nav className="hidden md:flex md:grow">
-            {/* Desktop sign in links 
-            <ul className="flex grow justify-end flex-wrap items-center">
-              <li>
-                <Link
-                  href="/signin"
-                  className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
-                >
-                  Sign in
-                </Link>
-              </li>
-              <li>
-                <Link href="/signup" className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">
-                  Sign up
-                </Link>
-              </li>
-            </ul>
-          </nav>
-
-          <MobileMenu />
-  */}
+ 
         </div>
       </div>
     </header>
