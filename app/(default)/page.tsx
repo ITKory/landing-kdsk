@@ -20,7 +20,7 @@ import Link from 'next/link'
   export default function Home() {
     return (
         <>
-       <Link href='/'>
+       
       
       <Toaster   position="bottom-center"/>
       <PageIllustration />
@@ -32,7 +32,7 @@ import Link from 'next/link'
     <Newsletter />
       <Feedback />  
     <Footer /> 
-       </Link>
+    
       
         </>
     )
