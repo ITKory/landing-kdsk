@@ -2,6 +2,7 @@
 import React, { useRef , useState} from 'react';
 import emailjs from '@emailjs/browser';
 import toast  from 'react-hot-toast';
+
 export const metadata = {
   title: 'Sign Up - Open PRO',
   description: 'Page description',

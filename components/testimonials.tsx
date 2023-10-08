@@ -31,7 +31,7 @@ export default function Testimonials() {
               </div>
               <blockquote className="text-lg text-gray-400 grow">— Сотрудничество с <br/> «КД-Стройконсалт» оказалось приятным и продуктивным опытом. С самого начала, команда проявила профессионализм, ответственность и внимание к деталям. Результаты их работы были высокого качества и полностью соответствовали нашим требованиям.</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Елена Борискина</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Должность</a>
+                <cite className="text-gray-200 not-italic">Чепурина Елена Борисовна</cite>  
               </div>
             </div>
 
@@ -47,7 +47,7 @@ export default function Testimonials() {
               </div>
               <blockquote className="text-lg text-gray-400 grow">— Особенно хочу отметить оперативность и гибкость в работе. Команда «КД-Стройконсалт» была всегда готова принять во внимание наши пожелания и внести необходимые изменения. Они также демонстрировали отличное понимание наших потребностей и помогли нам оптимизировать наш бюджет, не снижая при этом качество работ.</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Александр Юдин</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Должность</a>
+                <cite className="text-gray-200 not-italic">Воробьев Максим Игоревич</cite> - <p className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"  >Директор торгово-строительной компании «Бриз»</p>
               </div>
             </div>
 
@@ -63,7 +63,7 @@ export default function Testimonials() {
               </div>
               <blockquote className="text-lg text-gray-400 grow">— В целом, я очень доволен услугами компании «КД-Стройконсалт» и рекомендую их всем, кто ищет профессиональную и надежную разработку сметной документации. Благодаря их работе, мы смогли успешно реализовать наш проект и оставить положительное впечатление у наших клиентов. Спасибо за ваше отличное обслуживание!</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Юрйи Кузнецов</cite> - <a className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out" href="#0">Должность</a>
+                <cite className="text-gray-200 not-italic">Кузьмичев Андрей Николаевич</cite> - <p className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"  >Директор торгово-строительной компании «БазисГрупп» </p>
               </div>
             </div>
 

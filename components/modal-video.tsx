@@ -1,52 +1,31 @@
 'use client'
 import { useState, useRef, Fragment } from 'react'
-import type { StaticImageData } from 'next/image'
+ 
 import { Dialog, Transition } from '@headlessui/react'
-import Image from 'next/image'
+ 
 
 interface ModalVideoProps {
-  thumb: StaticImageData
-  thumbWidth: number
-  thumbHeight: number
-  thumbAlt: string
-  video: string
-  videoWidth: number
-  videoHeight: number
- 
+  title:String
   content:string
 }
 
-export default function ModalVideo({
-  thumb,
-  thumbWidth,
-  thumbHeight,
-  thumbAlt,
-  video,
-  videoWidth,
-  videoHeight,
- 
+export default function ModalNews({
+  title,
   content,
 }: ModalVideoProps) {
   const [modalOpen, setModalOpen] = useState<boolean>(false)
   const newsRef = useRef<HTMLVideoElement>(null)
 
   return (
-    <div>
+    <div className="relative flex flex-col lg:flex-row justify-between items-center">
 
       {/* news template */}
 
-    <div onClick={() => { setModalOpen(true) }} className=" shadow-lg shadow-gray-800 md:shadow-xl md:shadow-gray-800 block mx-5 max-w-[18rem] rounded-lg bg-white  dark:bg-neutral-700">
-  <div className="relative overflow-hidden bg-cover bg-no-repeat">
-    <img
-      className="rounded-t-lg"
-      src="https://tecdn.b-cdn.net/img/new/standard/nature/182.jpg"
-      width={400}
-      height={200}
-      alt="" />
-  </div>
+    <div onClick={() => { setModalOpen(true) }}   className=" relative flex flex-col lg:flex-row justify-between items-center shadow-lg shadow-gray-800 md:shadow-xl md:shadow-gray-800  mx-5 max-w-[18rem] rounded-lg bg-white  dark:bg-neutral-700">
+ 
   <div className="p-6">
     <p className="text-base text-neutral-600 dark:text-neutral-200">
-      text item number {content} 
+       {title} 
     </p>
   </div>
 </div>
@@ -102,8 +81,8 @@ export default function ModalVideo({
        
       
                <div className="max-w-3xl mx-auto text-center pb-12 md:pb-10">
-               <h4 className="h4 -mx-3 mb-3">Спасибо что выбрали нашу команду, в ближайшее время наш специалист свяжется с вами.</h4>
-              <blockquote className="text-lg text-gray-400 grow">— Особенно хочу отметить оперативность и гибкость в работе. Команда «КД-Стройконсалт» была всегда готова принять во внимание наши пожелания и внести необходимые изменения. Они также демонстрировали отличное понимание наших потребностей и помогли нам оптимизировать наш бюджет, не снижая при этом качество работ.</blockquote>
+               <h4 className="h4 -mx-3 mb-3">{title}</h4>
+              <blockquote className="text-lg text-gray-400 grow">— {content}</blockquote>
 
              </div>
         </div>
