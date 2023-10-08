@@ -55,14 +55,18 @@ const architects_daughter = Architects_Daughter({
  
  
 
-export default function RootLayout( ) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
  
   return (
     <html lang="en">
       <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-gray-900 text-gray-200 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden">
       
-        <RouterProvider router={router} />
+        {children}
    
         </div>
       </body>
