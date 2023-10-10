@@ -1,7 +1,7 @@
 'use client'
-import {  useRef   } from 'react'
+import { useRef } from 'react'
 
- 
+
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -29,15 +29,15 @@ export default function Hero() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16"   >
             <h2 className="h2 mb-4" data-aos="fade-up">Сметная документация для строительных работ</h2>
             <p className="text-xl text-gray-400 mb-8" data-aos="fade-up" data-aos-delay="200"> Успешно проходим экспертизу сметной документации в установленный срок </p>
-      
+
           </div>
-               <div className="flex-1 flex   justify-center items-center md:my-0 my-10 relative"  >
-               <video className='rounded shadow-lg shadow-gray-800 md:shadow-xl md:shadow-gray-800' autoPlay muted  ref={videoRef} width={424} height={576} loop controls>
-                  <source src="/videos/video.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video> 
-              </div>
-            
+          <div className="flex-1 flex   justify-center items-center md:my-0 my-10 relative"  >
+            <video className='rounded shadow-lg shadow-gray-800 md:shadow-xl md:shadow-gray-800' autoPlay muted ref={videoRef} width={424} height={576} loop controls>
+              <source src="/videos/video.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
 
         </div>
 

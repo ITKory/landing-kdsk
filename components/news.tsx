@@ -6,7 +6,7 @@ import { useEffect , useRef,useState} from 'react';
 import axios from 'axios';
 import { Carousel } from 'antd';
 import ModalNews from './modal-video';
-
+ 
 
 
  
@@ -21,6 +21,7 @@ const   News = () =>{
     });
    
   }, [setNews]);
+ 
  
   return (
 
