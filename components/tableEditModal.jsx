@@ -45,7 +45,7 @@ const EditModal  =({  id , title , content}) =>{
    
     const remove =   () => {
       setOpenDel(false);
-        axios.delete('https://kory.bsite.net/news/'+id) 
+        axios.delete('https://kdsk-mari.amvera.io/news'+id) 
         window.location.reload();
     };
     
