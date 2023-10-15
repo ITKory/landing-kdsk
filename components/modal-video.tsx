@@ -9,7 +9,7 @@ interface ModalVideoProps {
   content: string
 }
 
-export default function ModalNews({
+export default function  ModalNews({
   title,
   content,
 }: ModalVideoProps) {
@@ -17,7 +17,7 @@ export default function ModalNews({
   const newsRef = useRef<HTMLVideoElement>(null)
 
   return (
-    <div className="relative flex flex-col lg:flex-row justify-between items-center">
+    <div className="relative flex flex-col lg:flex-row justify-center items-center">
 
       {/* news template */}
 
