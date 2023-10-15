@@ -15,7 +15,7 @@ const   News = () =>{
   const [news,setNews] = useState([]);
   useEffect(() => {
   
-    axios({method:'get',url:'https://kory.bsite.net/news' }    ).then((resp) => {
+    axios({method:'get',  headers: { 'Content-Type': 'application/json'}, url:'https://kdsk-mari.amvera.io/news' }    ).then((resp) => {
       const allNews = resp.data;
       setNews(allNews);
     });

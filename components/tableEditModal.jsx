@@ -35,7 +35,7 @@ const EditModal  =({  id , title , content}) =>{
   const save = async () => {
     setOpenEdit(false);
    
-    await axios.put( 'https://kory.bsite.net/news/'+id,  {
+    await axios.put( 'https://kdsk-mari.amvera.io/news/'+id,  {
       "id": id,
       "content": "test",
       "title": "File"
