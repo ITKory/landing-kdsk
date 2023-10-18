@@ -21,7 +21,7 @@ export default function  ModalNews({
 
       {/* news template */}
 
-      <div onClick={() => { setModalOpen(true) }} className=" relative flex flex-col lg:flex-row justify-between items-center shadow-lg shadow-gray-800 md:shadow-xl md:shadow-gray-800 mb-1 mx-5 max-w-[18rem] rounded-lg bg-gray-800  dark:bg-neutral-700">
+      <div onClick={() => { setModalOpen(true) }} className="hover:bg-gray-700 relative flex flex-col lg:flex-row justify-between items-center shadow-lg shadow-gray-800 md:shadow-xl md:shadow-gray-800 mb-1 mx-5 max-w-[18rem] rounded-lg bg-gray-800  dark:bg-neutral-700">
 
         <div className="p-6">
           <p className="text-base text-neutral-200 dark:text-neutral-600">
