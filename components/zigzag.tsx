@@ -1,5 +1,4 @@
  
-
 export default function Zigzag() {
   return (
     <section>

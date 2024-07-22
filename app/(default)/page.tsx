@@ -14,12 +14,11 @@ import Header from '@/components/ui/header'
 import PageIllustration from '@/components/page-illustration'
 
 import { NextUIProvider } from "@nextui-org/react";
+import Projects from '@/components/projects'
 
 
 export default function Home() {
   return (
-
-
     <NextUIProvider>
       <Toaster position="bottom-center" />
       <PageIllustration />
@@ -28,12 +27,10 @@ export default function Home() {
       <Features />
       <Zigzag />
       <Testimonials />
-      <Newsletter />
-      <Feedback />
+      {/* <Newsletter /> */}
+     {/*<Feedback /> */} 
+     {/*<Projects/>*/} 
       <Footer />
     </NextUIProvider>
-
-
-
   )
 }

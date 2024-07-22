@@ -19,6 +19,7 @@
     "@mui/material": "^5.14.12",
     "@mui/x-data-grid": "^6.16.1",
     "@nextui-org/react": "^2.1.13",
+    "@react-pdf/renderer": "^3.4.4",
     "@refinedev/cli": "^2.7.4",
     "@refinedev/core": "^4.28.2",
     "@refinedev/devtools": "^1.1.6",
@@ -39,7 +40,7 @@
     "framer-motion": "^10.16.4",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
-    "next": "latest",
+    "next": "^14.2.5",
     "next-i18next": "^8.9.0",
     "next-optimized-images": "^2.6.2",
     "nookies": "^2.5.2",
@@ -50,6 +51,7 @@
     "react-hot-toast": "^2.4.1",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.0.1",
+    "sharp": "^0.33.4",
     "sort-by": "^1.2.0"
   },
   "devDependencies": {
