@@ -20,7 +20,7 @@ export default function Features() {
                 <path className="stroke-current text-purple-300" d="M43 42h-9M43 37h-9" strokeLinecap="square" strokeWidth="2" />
               </svg>
               <h4 className="h4 mb-2">Репутация надежности</h4>
-              <p className="text-lg text-gray-400 text-center">Наша компания известна своей надежностью и стабильностью. Мы имеем хорошие отзывы от наших клиентов и отличную репутацию в отрасли.</p>
+              <p className="text-lg text-gray-400 text-center">Более 20 успешно выполненных крупных объектов.</p>
             </div>
 
             {/* 2nd item */}
@@ -31,7 +31,7 @@ export default function Features() {
                 <path className="stroke-current text-purple-300" d="M26 28h12M26 32h12M26 36h5" strokeWidth="2" strokeLinecap="square" />
               </svg>
               <h4 className="h4 mb-2"> Соблюдение сроков</h4>
-              <p className="text-lg text-gray-400 text-center">Мы придерживаемся жесткого графика работы и всегда стараемся завершить проект в срок. Мы ценим ваше время и стремимся предоставить вам результат в оговоренные сроки.</p>
+              <p className="text-lg text-gray-400 text-center">Мы придерживаемся жесткого графика работы и всегда завершаем проект в срок.</p>
             </div>
 
             {/* 3rd item */}
@@ -44,8 +44,8 @@ export default function Features() {
                   <circle className="stroke-current text-purple-100" cx="11" cy="11" r="11" />
                 </g>
               </svg>
-              <h4 className="h4 mb-2"> Инновационные решения</h4>
-              <p className="text-lg text-gray-400 text-center">Внедрение инноваций позволяет нам использовать более эффективные методы и материалы, что дает преимущество в качестве выполнения работ.</p>
+              <h4 className="h4 mb-2"> Оптимизация проектных решений</h4>
+              <p className="text-lg text-gray-400 text-center">Даём четкие рекомендации по корректироваке проектных решений, для увелечния рентабельности проектка.</p>
             </div>
 
             {/* 4th item */}
@@ -58,7 +58,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">Профессионализм</h4>
-              <p className="text-lg text-gray-400 text-center">Мы  предлагаем высококвалифицированные услуги. Наши специалисты обладают экспертизой в различных областях, что гарантирует качество.</p>
+              <p className="text-lg text-gray-400 text-center">Мы предлагаем высококвалифицированные услуги. Наши специалисты обладают опытом и профессионализмом, что гарантирует качество.</p>
             </div>
 
             {/* 5th item */}
@@ -71,7 +71,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">Прозрачность</h4>
-              <p className="text-lg text-gray-400 text-center">Мы ценим открытость и прозрачность во всех деловых отношениях. Предоставляем подробную информацию о стоимости работ и не делаем скрытых платежей.</p>
+              <p className="text-lg text-gray-400 text-center">Мы ценим открытость и прозрачность во всех деловых отношениях.</p>
             </div>
 
             {/* 6th item */}
@@ -85,7 +85,7 @@ export default function Features() {
                 </g>
               </svg>
               <h4 className="h4 mb-2">Клиентоориентированность</h4>
-              <p className="text-lg text-gray-400 text-center"> Ваше удовлетворение - наш главный приоритет. Наша команда всегда готова обсудить любые вопросы и внести необходимые изменения, чтобы удовлетворить ваши потребности.</p>
+              <p className="text-lg text-gray-400 text-center">Наша команда всегда готова обсудить любые вопросы и внести необходимые изменения.</p>
             </div>
 
           </div>
