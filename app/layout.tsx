@@ -3,6 +3,7 @@ import './css/style.css'
 import { Inter, Architects_Daughter } from 'next/font/google'
 import Head from 'next/head';
 import * as React from 'react';
+import type { Metadata } from 'next';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -16,6 +17,10 @@ const architects_daughter = Architects_Daughter({
   weight: '400',
   display: 'swap'
 })
+const metadata: Metadata = {
+title: 'Example component',
+description: 'Learning Next.js SEO',
+};
 
 export default function RootLayout({
   children,
