@@ -2,6 +2,8 @@ import Image from "next/image";
 import zigOne from '../public/images/zig-one.svg'
 import zigTwo from '../public/images/zig-two.svg'
 import zigThree from '../public/images/zig-three.svg'
+import { Card } from "antd";
+const { Meta } = Card;
 
 
 export default function Zigzag() {
@@ -81,33 +83,6 @@ export default function Zigzag() {
             </div>
 
 
-            {/* 2nd item */}
-            <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
-              {/* Image */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6  md:mb-0 " data-aos="fade-up">
-                <Image width={600} height={600} alt="zig-two" src={zigTwo} />
-              </div>
-              {/* Content */}
-              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
-                <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <h3 className="h3 mb-3">Как мы работаем</h3>
-                  <ul className="text-lg text-wrap text-gray-400 -mb-2">
-                    <li className="flex items-center mb-2">
-                      <div className="font-architects-daughter text-xl  text-purple-600 mr-3 ">1.</div>
-                      <span>Оставьте заявку в форме обратной связи</span>
-                    </li>
-                    <li className="flex items-center mb-2">
-                      <div className="font-architects-daughter text-xl  text-purple-600 mr-3 mb-12  ">2.</div>
-                      <span>Мы свяжемся с вами, определим объем работ и расчитаем стоимость.</span>
-                    </li>
-                    <li className="flex items-center">
-                      <div className="font-architects-daughter text-xl  text-purple-600 mr-3 mb-2">4.</div>
-                      <span>Выполняем смету и направляем её вам.</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
 
             {/* 3rd item */}
             <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
@@ -362,6 +337,29 @@ export default function Zigzag() {
                       <span>Контроль качества</span>
                     </li>
                   </ul>
+                </div>
+              </div>
+            </div>
+            
+            {/* 2nd item */}
+            <div className="md:grid mt-20 md:gap-6 items-center">
+              {/* Image */}
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-3 lg:col-span-3  md:mb-0 " data-aos="fade-up">
+              </div>
+              {/* Content */}
+
+              <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
+                <div className="md:pl-4 lg:pl-12 xl:pl-16">
+
+                <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="400">
+              <div>
+ 
+              </div>
+              <blockquote className="text-lg text-gray-400 grow">— Звоните мне и я проконсультирую Вас лично!</blockquote>
+              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
+                <cite className="text-gray-200 not-italic">Денисов Евгений Юрьевич </cite><p className="text-gray-200 not-italic">+7 (908) 237-41-67</p> - <p className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"  >Руководитель КД-Стройконсалт</p>
+              </div>
+            </div>
                 </div>
               </div>
             </div>

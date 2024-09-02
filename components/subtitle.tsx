@@ -20,13 +20,13 @@ export default function Subtitile() {
         {/* Hero content */}
         <div className="relative pt-52 pb-10 md:pt-40 md:pb-16 ">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16"   >
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h2 className="h2 mb-4" data-aos="fade-up">Сметная документация для строительных работ</h2>
             <div data-aos-delay="200" className="md:py-2 md:px-12 text-lg text-gray-400  max-w-6xl   sm:px-2">
             Увеличиваем стоимость действующих государственных контрактов до 30%
               </div>
           </div>
-          <div className="flex-1 flex   justify-center items-center md:my-0 my-10 relative"  >
+          <div   >
             <ProjectsCarusel />
           </div>
         </div>
