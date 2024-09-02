@@ -21,7 +21,26 @@ const ProjectsCarusel = () => {
             <h2 className="h2 mb-4"> Основные объекты </h2>
           </div>
 
-          <Carousel autoplay>
+          <Carousel>
+
+          <div className=" relative bg-gray-800 py-10 px-8 md:py-16 md:px-12 text-xl text-gray-400  max-w-6xl mx-auto px-2 sm:px-2">
+              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-10">
+                <h3 className="h4 -mx-3 mb-3"> ООО «КД-Стройконсалт» имеет наработанный опыт взаимодействия с основными государственными заказчиками, экспертными организациями, застройщиками и генподрядчиками:
+                </h3>
+              </div>
+
+              <ul className='list-disc   space-y-2.5   '>
+                <li>МКУ «Главное управление по капитальному строительству города Нижнего Новгорода»</li>
+                <li>ГКУ НО «Нижегородстройзаказчик»</li>
+                <li>АО «Корпорация развития Нижегородской области»</li>
+                <li>ООО «Светлоград» (ЖК Подкова)</li>
+                <li>ООО «Старт-строй» (Столица Нижний)</li>
+                <li>ГК «Каркас монолит»</li>
+                <li>ГБУ НО «Нижегородсмета»</li>
+                <li>У НО «Управление госэкспертизы»</li>
+              </ul>
+            </div>
+
             <div className="relative bg-gray-800 py-10 px-8 md:py-16 md:px-12 text-xl text-gray-400 ">
               <h3 >
                 <ul className='list-disc space-y-1'>
@@ -62,6 +81,7 @@ const ProjectsCarusel = () => {
                   </li>
                 </ul></h3>
             </div>
+
             <div className='relative bg-gray-800 py-10 px-8 md:py-16 md:px-12 text-xl text-gray-400 '>
               <ul className='list-disc space-y-3   '>
                 <li>
@@ -94,23 +114,7 @@ const ProjectsCarusel = () => {
               </ul>
 
             </div>
-            <div className=" relative bg-gray-800 py-10 px-8 md:py-16 md:px-12 text-xl text-gray-400  max-w-6xl mx-auto px-2 sm:px-2">
-              <div className="max-w-3xl mx-auto text-center pb-12 md:pb-10">
-                <h3 className="h4 -mx-3 mb-3"> ООО «КД-Стройконсалт» имеет наработанный опыт взаимодействия с основными государственными заказчиками, экспертными организациями, застройщиками и генподрядчиками:
-                </h3>
-              </div>
 
-              <ul className='list-disc   space-y-2.5   '>
-                <li>МКУ «Главное управление по капитальному строительству города Нижнего Новгорода»</li>
-                <li>ГКУ НО «Нижегородстройзаказчик»</li>
-                <li>АО «Корпорация развития Нижегородской области»</li>
-                <li>ООО «Светлоград» (ЖК Подкова)</li>
-                <li>ООО «Старт-строй» (Столица Нижний)</li>
-                <li>ГК «Каркас монолит»</li>
-                <li>ГБУ НО «Нижегородсмета»</li>
-                <li>У НО «Управление госэкспертизы»</li>
-              </ul>
-            </div>
 
           </Carousel>
 
