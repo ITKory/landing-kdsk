@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
 import BackgroundIllustration from '@/components/background-illustartion';
@@ -11,12 +11,12 @@ export const metadata = {
 
 export default function Newsletter() {
   const [showForm, setShowForm] = useState(true);
-
+  useEffect(() => emailjs.init("iMQVYuqG6vBHkUfC3"), []);
   const form = useRef();
-  const sendEmail = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setShowForm(false);
-    emailjs.sendForm('service_ybynq75', 'template_or1y2pr', form.current, 'zHd0zM7ZzmtGQQff_')
+    emailjs.sendForm('service_ybynq75', 'template_or1y2pr', form.current)
       .then((result) => {
         toast.success('Ваша заявка отправлена на рассмотрение !')
         setShowForm(false);
@@ -44,7 +44,7 @@ export default function Newsletter() {
                   <p className="text-xl text-gray-400 mb-8">Стоимость разработки сметной документации индивидуальна для каждого проекта. Для оценки стоимости, заполните форму обратной связи.</p>
                 </div>
                 <div className="max-w-sm mx-auto">
-                  <form ref={form} onSubmit={sendEmail}>
+                  <form ref={form}   onSubmit={handleSubmit}>
                     <div className="flex flex-wrap -mx-3 mb-4">
                       <div className="w-full ">
                         <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="full-name">ФИО <span className="text-red-600">*</span></label>
@@ -82,7 +82,7 @@ export default function Newsletter() {
                       </div>
                     </div>
                   </form>
-                  <div className="text-gray-400 text-center mt-6"> Нажимая на кнопку, вы даете согласие на обработку ваших персональных данных.Поля, отмеченные звездочкой, обязательны для заполнения.</div>
+                  <div className="text-gray-400 text-center mt-6"> Нажимая на кнопку, вы даете согласие на обработку ваших персональных данных. Поля, отмеченные звездочкой, обязательны для заполнения.</div>
                 </div>
 
               </div>

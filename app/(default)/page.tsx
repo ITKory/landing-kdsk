@@ -9,6 +9,7 @@ import { Toaster } from 'react-hot-toast'
 import Footer from '@/components/ui/footer'
 import Header from '@/components/ui/header'
 import { NextUIProvider } from "@nextui-org/react";
+import ProjectsCarusel from '@/components/projectsCarusel'
 
 
 export default function Home() {
@@ -17,10 +18,11 @@ export default function Home() {
       <Toaster position="bottom-center" />
       <Header />
       <Subtitle />
+      <ProjectsCarusel/>
       <Features />
       <Zigzag />
       <Testimonials />
-      {/* <Newsletter /> */}
+      <Newsletter /> 
       <Footer />
     </NextUIProvider>
   )

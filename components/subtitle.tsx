@@ -26,9 +26,6 @@ export default function Subtitile() {
             Увеличиваем стоимость действующих государственных контрактов до 30%
               </div>
           </div>
-          <div   >
-            <ProjectsCarusel />
-          </div>
         </div>
       </div>
     </section>
