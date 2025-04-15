@@ -1,6 +1,7 @@
 import Image from "next/image";
 import zigOne from '../public/images/zig-one.svg'
 import zigTwo from '../public/images/zig-two.svg'
+import { PhoneFilled, RocketFilled } from "@ant-design/icons";
 import zigThree from '../public/images/zig-three.svg'
 import { Card } from "antd";
 const { Meta } = Card;
@@ -14,8 +15,9 @@ export default function Zigzag() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">Reach goals that matter</div>
-            <h1 className="h2 mb-4"> Что мы предлагаем </h1>
+          <span className="inline-block py-2 px-4 mb-4 text-sm font-semibold text-green-400 bg-green-900 rounded-full">
+            <RocketFilled className="mr-2"/> Достигайте высоких целей с Нами
+          </span>            <h1 className="h2 mb-4"> Что мы предлагаем </h1>
             <p className="text-xl text-gray-400">Наша компания предлагает услуги по разработке смет на все виды строительных, ремонтных, монтажных работ, а также принимает заказы на сметы во всех существующих на сегодня нормативных базах.</p>
           </div>
 
@@ -118,7 +120,7 @@ export default function Zigzag() {
                 </div>
               </div>
             </div>
-            
+
             {/* 2nd item */}
             <div className="md:grid mt-20 md:gap-6 items-center">
               {/* Image */}
@@ -127,17 +129,22 @@ export default function Zigzag() {
               {/* Content */}
 
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
-                <div className="md:pl-4 lg:pl-12 xl:pl-16">
 
                 <div className="flex flex-col h-full p-6 bg-gray-800" data-aos="fade-up" data-aos-delay="400">
               <div>
- 
+
               </div>
               <blockquote className="text-lg text-gray-400 grow">— Звоните мне и я проконсультирую Вас лично!</blockquote>
-              <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Денисов Евгений Юрьевич </cite><p className="text-gray-200 not-italic">+7 (908) 237-41-67</p> - <p className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"  >Руководитель КД-Стройконсалт</p>
-              </div>
-            </div>
+                  <div className="mt-3 pt-3 border-t border-gray-700">
+                    <a
+                        href="tel:+79082374167"
+                        className="inline-flex items-center text-2xl font-bold text-green-400 hover:text-green-300 transition-colors"
+                    >
+                      +7 (908) 237-41-67
+                    </a>
+                    <p className="text-gray-400 mt-2">Денисов Евгений Юрьевич</p>
+                    <p className="text-purple-400">Руководитель КД-Стройконсалт</p>
+                  </div>
                 </div>
               </div>
             </div>

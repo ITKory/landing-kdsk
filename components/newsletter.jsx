@@ -40,7 +40,7 @@ export default function Newsletter() {
             {showForm ?
               <div className="max-w-6xl mx-auto px-2 sm:px-2">
                 <div className="max-w-3xl mx-auto text-center pb-12 md:pb-10">
-                  <h3 className="h2 -mx-3 mb-3">Оставьте заявку.</h3>
+                  <h3 className="h2 -mx-3 mb-3">Оставьте заявку</h3>
                   <p className="text-xl text-gray-400 mb-8">Стоимость разработки сметной документации индивидуальна для каждого проекта. Для оценки стоимости, заполните форму обратной связи.</p>
                 </div>
                 <div className="max-w-sm mx-auto">
