@@ -6,8 +6,28 @@ import zigThree from '../public/images/zig-three.svg'
 import { Card } from "antd";
 const { Meta } = Card;
 
+declare global {
+  interface Window {
+    ym?: (counterId: number, method: string, goalName: string) => void;
+  }
+}
 
 export default function Zigzag() {
+
+  const handlePhoneClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const phoneLink = e.currentTarget.href;
+
+    if (window.ym) {
+      window.ym(100908541, 'reachGoal', 'make-call');
+    }
+
+    // Добавляем задержку для гарантированной отправки события
+    setTimeout(() => {
+      window.location.href = phoneLink;
+    }, 300);
+  };
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -139,6 +159,7 @@ export default function Zigzag() {
                     <a
                         href="tel:+79082374167"
                         className="inline-flex items-center text-2xl font-bold text-green-400 hover:text-green-300 transition-colors"
+                        onClick={handlePhoneClick}
                     >
                       +7 (908) 237-41-67
                     </a>

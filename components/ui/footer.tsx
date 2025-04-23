@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Logo from '../../public/images/logo.svg'
 
 function DevWatermark() {
+
   return (
       <div className="dev-watermark">
         <a href='http://primehillz.ru' className="font-architects-daughter text-xl text-purple-600 "> POWERED BY PRIMEHILL </a>
@@ -24,6 +25,19 @@ const WhatsAppIcon = () => (
 );
 
 export default function Footer() {
+  const handlePhoneClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const phoneLink = e.currentTarget.href;
+
+    if (window.ym) {
+      window.ym(100908541, 'reachGoal', 'make-call');
+    }
+
+    // Добавляем задержку для гарантированной отправки события
+    setTimeout(() => {
+      window.location.href = phoneLink;
+    }, 300);
+  };
   return (
       <>
     <footer>
@@ -56,11 +70,17 @@ export default function Footer() {
                   <div className="text-gray-400">д.27/8, офис №41</div>
                 </li>
                 <li className="mb-1 flex items-center space-x-2">
-                  <a href="tel:+79082374167" className="text-gray-400 hover:text-gray-200">+7 908 237-41-67</a>
-                  <a href="https://t.me/+79082374167" target="_blank" rel="noopener noreferrer" aria-label="Telegram" className="hover:text-gray-200">
+                  <a href="tel:+79082374167"
+                     onClick={handlePhoneClick}
+                     className="text-gray-400 hover:text-gray-200">+7 908 237-41-67</a>
+                  <a href="https://t.me/+79082374167"
+                     onClick={handlePhoneClick}
+                     target="_blank" rel="noopener noreferrer" aria-label="Telegram" className="hover:text-gray-200">
                     <TelegramIcon />
                   </a>
-                  <a href="https://wa.me/79082374167" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="hover:text-gray-200">
+                  <a href="https://wa.me/79082374167"
+                     onClick={handlePhoneClick}
+                     target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="hover:text-gray-200">
                     <WhatsAppIcon />
                   </a>
                 </li>
