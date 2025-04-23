@@ -40,15 +40,15 @@ export default function RootLayout({
       <html lang="en">
       <head>
         <title>KDSK</title>
-        <meta name="description" content="Checkout our cool page" key="desc" />
-        <meta property="og:title" content="Social Title for Cool Page" />
+        <meta name="description" content="Увеличиваем стоимость действующих государственных контрактов до 30%" key="desc" />
+        <meta property="og:title" content="Сметная документация для строительных работ" />
         <meta
             property="og:description"
-            content="And a social description for our cool page"
+            content="Более 20 успешно выполненных крупных объектов."
         />
         <meta
             property="og:image"
-            content="https://cdn.culture.ru/images/f67637ef-7daf-509e-b846-11bbe94d89bf"
+            content="https://smeta-kdsk.ru/_next/static/chunks/public/images/header-logo.68cec6e0966126c7.svg"
         />
 
         <Script
