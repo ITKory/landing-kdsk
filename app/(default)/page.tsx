@@ -9,7 +9,8 @@ import { Toaster } from 'react-hot-toast'
 import Footer from '@/components/ui/footer'
 import Header from '@/components/ui/header'
 import { NextUIProvider } from "@nextui-org/react";
-import ProjectsCarusel from '@/components/projectsCarusel'
+import LandingCarusel from "@/components/ui/landing-carusel";
+import FloatingMagicButton from "@/components/ui/float-button";
 
 
 export default function Home() {
@@ -18,12 +19,16 @@ export default function Home() {
       <Toaster position="bottom-center" />
       <Header />
       <Subtitle />
-      <ProjectsCarusel/>
+      {/*<ProjectsCarusel/>*/}
+        <LandingCarusel />
       <Features />
       <Zigzag />
       <Testimonials />
-      <Newsletter /> 
+        <section id="form">
+         <Newsletter />
+        </section>
       <Footer />
+        <FloatingMagicButton />
     </NextUIProvider>
   )
 }

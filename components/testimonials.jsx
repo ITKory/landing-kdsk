@@ -1,8 +1,8 @@
 import Image from 'next/image'
 
 import { DownloadOutlined } from '@ant-design/icons';
-import { Button, Radio } from 'antd';
-import React, { useState } from 'react';
+import { Button  } from 'antd';
+import React from 'react';
 import PortfolioPdf from '../app/resurces/portfolio-kdsk.pdf'
 
 
@@ -32,7 +32,7 @@ export default function Testimonials() {
                   </svg>
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— В целом, я очень доволен услугами компании «КД-Стройконсалт» и рекомендую их всем, кто ищет профессиональную и надежную разработку сметной документации. Благодаря их работе, мы смогли успешно реализовать наш проект и оставить положительное впечатление у наших клиентов. Спасибо за ваше отличное обслуживание!</blockquote>
+              <blockquote className="text-lg text-gray-400 grow">— В целом, я очень доволен услугами компании «КД-Стройконсалт» и рекомендую их всем, кто ищет профессиональную и надежную разработку сметной документации. Благодаря их работе, мы смогли успешно реализовать наш проект и оставить положительное впечатление у наших заказчиков. Спасибо за ваше отличное обслуживание!</blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                 <cite className="text-gray-200 not-italic">Кузьмичев Андрей Николаевич</cite> - <p className="text-purple-600 hover:text-gray-200 transition duration-150 ease-in-out"  >Директор торгово-строительной компании «БазисГрупп» </p>
               </div>
