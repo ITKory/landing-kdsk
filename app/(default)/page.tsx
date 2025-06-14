@@ -11,6 +11,7 @@ import Header from '@/components/ui/header'
 import { NextUIProvider } from "@nextui-org/react";
 import LandingCarusel from "@/components/ui/landing-carusel";
 import FloatingMagicButton from "@/components/ui/float-button";
+import Calculator from "@/components/sections/calculator";
 
 
 export default function Home() {
@@ -20,7 +21,10 @@ export default function Home() {
       <Header />
       <Subtitle />
       {/*<ProjectsCarusel/>*/}
+
         <LandingCarusel />
+        <Calculator/>
+
       <Features />
       <Zigzag />
       <Testimonials />
